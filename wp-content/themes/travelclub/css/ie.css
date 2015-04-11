@@ -1,0 +1,45 @@
+/**
+ * MSIE hacks (ie.css)
+ * CSS style fixes for IE incompatiblities.
+ *
+ * Description:
+ *        Use ie.css to declar all your IE speficic styles into.
+ *        To target specific IE Browsers, create a new stylesheet labeled ie(version).css
+ *        Don't forget to Copy and Paste the correct targetting css link into header.php
+ */
+
+/* Examples:
+
+Targets ALL MSIE Browsers:
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="<?php echo bloginfo('template_directory') . '/css/ie.css'; ?>" media="screen" />
+<![endif]-->
+
+Targets Browser: IE7
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="<?php echo bloginfo('template_directory') . '/css/ie7.css'; ?>" media="screen" />
+<![endif]-->
+
+Targets Browsers: IE5, IE5.5 and IE6
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="<?php echo bloginfo('template_directory') . '/css/ie6.css'; ?>" media="screen" />
+<![endif]-->
+
+*/
+
+/*  
+Theme Name: Travel Club
+Theme URI: http://www.tui.it/
+Description: A Wordpress free theme for passionate traveler
+Version: 1
+Author: Berardo Mate
+Author URI: http://berardomate.com/
+Tags: blue, white, fixed width, two columns, widgets
+Text Domain: travel club
+*/	
+	 
+	#menu ul { padding: 0; }
+	#menu li { width: 0; }
+	*:first-child+html .nav {height: 1%;} 
+	*:first-child+html .nav li {height: 1%;}
+	
